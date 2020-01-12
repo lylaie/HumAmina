@@ -1,0 +1,20 @@
+
+
+const myButton = document.getElementById("submit_button");
+const fa_name = document.getElementById("fa_name").value;
+
+function show_alert_message(x)
+{
+		x.style.backgroundColor = "lightpink";	
+		alert("Veuillez remplir les champs en rouge");
+}
+
+myButton.addEventListener('click', () => {
+		const fa_name = document.getElementById("fa_name");
+		const fa_mail = document.getElementById("fa_mail");
+		if (fa_name.value == "")
+		{
+				show_alert_message(fa_name);
+				alert("Veuillez indiquer votre nom de FA");
+		}
+});

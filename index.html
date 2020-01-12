@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+		<meta charset= 'utf-8'>
+		<header>
+				<title>Web app test de remplissage</title>
+				<link rel="stylesheet" type="text/css" href="style.css">
+		</header>
+		<body>
+		<form name="form1" method="post" action="form_email.php">
+				<article>
+						<div>Nom de la Fa : <input type="text" id="fa_name"></input></div>
+						<div>Email: <input type="email" id="fa_mail"></input></div>
+						<div>Date d'envoi: <input type="date" id="sending_date"></input></div>
+				</article>
+
+				<article id="part_two">
+						<div>Type d'animal<br/>
+								<input type="radio" name="animal" value="cat">Chat</input>
+								<input type="radio" name="animal" value="dog">Chien</input>
+								<input type="radio" name="animal" value="rabbit">Lapin</input>
+								<input type="radio" name="animal" value="other">Autres</input>
+						</div>
+
+						<div>Nom : <input type="text" id="id_name" required></input></div>
+
+						<div>Sexe :<br/> 
+								<form>
+										<input type="radio" name="gender" value="male">Mâle</input>
+										<input type="radio" name="gender" value="female">Femelle</input>
+										<input type="radio" name="gender" value="undefined" checked>Indéterminé</input>
+								</form>
+						</div>
+						
+						<div>Race : <input type="text" name="race"></input></div>
+						
+						<div> Pelage:
+						<br/> Couleur(s): <input type="text" name="color"></input>
+						<br/> Type:
+								<form>
+										<input type="radio" name="fur_type" value="long">Long</input>
+										<input type="radio" name="fur_type" value="half_long">Mi-long</input>
+										<input type="radio" name="fur_type" value="short" checked>Court</input>
+								</form>
+						</div>
+						
+						<div> Date du sauvetage: <input type="date" name="save_date"></input>
+						</div>
+
+						<div> Lieu du sauvetage : <input type="text" name="rescue_adress"></input>
+						</div>
+
+						<div>Etat de santé à l'arrivée : <textarea name="health" rows="5" cols="30"></textarea>
+						</div>
+
+						<div>Date de Naissance : <input type="date" name="birth_date"></input>
+						</div>
+
+						<div>Date du Primo : <input type="date" name="primo_date"></input>
+						</div>
+
+						<div>Date du Rappel: <input type="date" name="second_date"></input>
+						</div>
+
+						<div>Numéro du passeport : <input type="text" name="passport"></input>
+						</div>
+
+						<div>Numéro de puce électronique: <input type="number" name="ship"></input>
+						</div>
+
+						<div>Médication éventuelle : <textarea name="meds" rows="5" cols="30"></textarea>
+						</div> 
+						
+						<div>Déparatisage vermifuge - produits + date <textarea name="notflue" rows="5" cols="30"></textarea>
+						</div>
+
+						<div>Comportement - remarques éventuelles : <textarea name="comments" rows="5" cols="30"></textarea>
+						</div>
+				</article>
+						<input type="submit" id="submit_button" name="submit"></button>
+		</form>
+		</body>
+		<script src="app.js"></script>
+</html>
